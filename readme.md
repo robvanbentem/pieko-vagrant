@@ -15,6 +15,11 @@ Vagrant box bootstrapped for [Pieko](https://github.com/robvanbentem/pieko) deve
 
 Optionally you can set up a shared folder in virtualbox that syncs the `/var/www/pieko.dev` folder to your host system. On windows systems this is not recommended because of performance issues.
 
+### Issues
+
+- An error will display at the end of  `vagrant up` with the message: `Cannot create /var/www/html;`. This is not a problem and can be ignored.
+- During the installation through the `pieko.sh` script, composer can suspend downloading and ask for your Github credentials. This is because we need quite a lot of packages and Github can throttle anonymous users.
+
 ### Basic information
 
 - Box IP: `192.168.56.101`
