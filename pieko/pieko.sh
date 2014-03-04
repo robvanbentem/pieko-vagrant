@@ -38,6 +38,8 @@ git clone https://github.com/dg/adminer-custom.git .
 sudo cp /vagrant/pieko/*.conf /etc/nginx/conf.d/
 sudo /etc/init.d/nginx restart
 
+echo 'cd /var/www/pieko.dev' >> /home/vagrant/.bashrc
+
 ssh-keygen -t rsa -C "$GITMAIL" -q -f /home/vagrant/.ssh/id_rsa -N "$SSHPASS"
 
 echo "Add your public key to your github account: https://github.com/settings/ssh"
